@@ -1,0 +1,82 @@
+#App-homepage {
+	display: grid;
+	align-items: center;
+	grid-template-rows: 0.5fr 1.5fr 0.5fr;
+}
+
+#difficulty {
+	align-self: end;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+#home-container {
+	width: fit-content;
+	margin: auto;
+	display: grid;
+	height: 100%;
+}
+
+.outline-none:focus {
+	outline: none;
+}
+
+#difficulty-amount-container {
+	align-self: center;
+	display: grid;
+	grid-gap: 35%;
+}
+
+#blue-button {
+	background-color: royalblue;
+	border: 0;
+	color: white;
+	padding: 6px;
+	border-radius: 7%;
+	font-size: 30px;
+	width: 240px;
+	place-self: center;
+}
+
+#blue-button:active {
+	font-size: 27px;
+}
+#blue-button:focus {
+	outline: none;
+}
+
+select,
+input {
+	width: 250px;
+	font-size: x-large;
+}
+
+@media only screen and (max-width: 1025px) {
+	#App-homepage {
+		grid-template-rows: 0.5fr 3.5fr 1fr;
+	}
+	#difficulty-amount-container {
+		width: 300px;
+	}
+	.width-100 {
+		height: 50px;
+	}
+	#blue-button {
+		font-size: 20px;
+	}
+	#blue-button:active {
+		font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.width-100 {
+		height: 40px;
+	}
+	select,
+	input {
+		font-size: large;
+	}
+}
