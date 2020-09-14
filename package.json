@@ -18,14 +18,15 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "redux": "^4.0.5",
+    "serve": "^11.3.2",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build"},
-    
+    "heroku-postbuild": "npm run build"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
