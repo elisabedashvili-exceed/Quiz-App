@@ -29,3 +29,9 @@ export const finishGame = () => {
 		type: 'FINISH_GAME',
 	};
 };
+
+export const clearState = () => {
+	return {
+		type: 'CLEAR_STATE',
+	};
+};

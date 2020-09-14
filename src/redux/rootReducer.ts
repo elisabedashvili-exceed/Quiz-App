@@ -47,8 +47,10 @@ export default (state: IAppState = initialState, action: any) => {
 			return {
 				...state,
 				playStatus: 'finished',
-				currentQuestionIndex: 0
+				currentQuestionIndex: 0,
 			};
+		case 'CLEAR_STATE':
+			return initialState;
 
 		default:
 			return state;

@@ -1,13 +1,13 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
-import './components.css';
+import '../../components/components.css';
 
-import { IAppState } from '../redux/rootReducer';
-import { submitAnswer, finishGame } from '../redux/actions';
+import { IAppState } from '../../redux/rootReducer';
+import { submitAnswer, finishGame } from '../../redux/actions';
 
-import Header from '../components/Header';
+import Header from '../Header';
 
 export default function Question() {
 	const state = useSelector((state: IAppState) => state);
@@ -46,8 +46,7 @@ export default function Question() {
 					<div className="question">{question}</div>
 				) : (
 					<div className="warning">
-						Go to main page and{' '}
-						<a href="http://localhost:3000">start the game</a>{' '}
+						Go to main page and <Link to="/">start the game</Link>
 					</div>
 				)}
 

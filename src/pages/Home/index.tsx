@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './pages.css';
+import '../../pages/pages.css';
 
-import Header from '../components/Header';
-import BeginButton from '../components/BeginButton';
+import Header from '../../components/Header';
+import BeginButton from '../../components/BeginButton';
 
 export default function Home() {
 	const [amountOfQuestions, setAmountOfQuestions] = useState(0);

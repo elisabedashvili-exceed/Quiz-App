@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
-import { startGame } from '../redux/actions';
+import { startGame } from '../../redux/actions';
 
 interface IProps {
 	amountOfQuestions: number;

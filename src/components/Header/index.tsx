@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import '../components/components.css';
-import { IAppState } from '../redux/rootReducer';
+import '../../components/components.css';
+import { IAppState } from '../../redux/rootReducer';
 
 export default function Header() {
 	let state = useSelector((state: IAppState) => state);
