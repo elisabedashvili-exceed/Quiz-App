@@ -50,7 +50,6 @@ export default function Results() {
 			) : (
 				<div className="warning">
 					Go to main page and <Link to="/">start the game</Link>
-					<span>Test</span>
 				</div>
 			)}
 		</>
